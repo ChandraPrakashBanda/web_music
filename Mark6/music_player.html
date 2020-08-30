@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC PLAYER</title>
+    <script src="https://kit.fontawesome.com/7d35781f0a.js" crossorigin="anonymous"></script> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="player">
+        <h2>MUSIC PLAYER</h2>
+        <div class="header">
+            <a href="#" class="button">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+                <span class="sr-only">menu bar</span>
+            </a>
+            <p>Now Playing</p>
+            <a href="#" class="button">
+                <label>
+                    <input type="checkbox" name="theme">
+                    <span class="btn sr-only">Search</span>
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                </label>
+            </a>
+        </div>
+        <img id="image" src="images/Memories.jpg" alt="album art" class="art">
+        <div class="info">
+            <h1 id="playlist_status"></h1>
+            <p id="playlist_artist"></p>
+        </div>
+        <div class="prog">
+            <div class="prog-time">
+                <span id="curtimetext" class="left">00:00</span>
+                <span id="durtimetext" class="right">00:00</span>
+            </div>
+            <div class="prog-bar">
+                <input id="seekslider" class="seekslider" type="range" min="0" max="100" value="0" step="1">
+            </div>
+        </div>
+        <ul class="buttons">
+            <span id="random" class="shuffle button button-sm">
+                <i class="fas fa-random fa-sm" aria-hidden="true"></i>
+                <span class="sr-only">Shuffle</span>
+            </span>
+            <span id="prevbtn" class="prev button button-md">
+                <i class="fas fa-step-backward" aria-hidden="true"></i>
+                <span class="sr-only">Previous Music</span>
+            </span>
+            <span id="playpausebtn" class="playpause button button-lg">
+                <i class="fas fa-play fa-lg" aria-hidden="true"></i>
+                <i class="fas fa-pause fa-lg" aria-hidden="true"></i>
+                <span class="sr-only">Pause</span>
+            </span>
+            <span id="nextbtn" class="next button button-md">
+                <i class="fas fa-step-forward"></i>
+                <span class="sr-only">Next Music</span>
+            </span>
+            <span id="repeat" class="loop button button-sm">
+                <i class="fas fa-circle-notch fa-sm" aria-hidden="true"></i>
+                <span class="sr-only">Repeat Song</span>
+            </span>
+        </ul>
+        <div class="bar"></div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
