@@ -212,6 +212,7 @@ input[type="checkbox"]{
     background-position: center;
     background-size: cover;
     font-size: 250px;
+    border:thick;
+    box-shadow:black;
     
-
 }
