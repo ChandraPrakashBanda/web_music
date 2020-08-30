@@ -204,7 +204,7 @@ label{
 input[type="checkbox"]{
     -webkit-appearance: none;
 }
-.main h1{
+.main button{
     display: flex;
     justify-content: center;
     align-items: center;
